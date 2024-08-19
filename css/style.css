@@ -28,11 +28,20 @@ html{
 *::before,
 ::after {
     box-sizing: inherit;
+    
 }
-
+*:focus{
+    outline: 2px dotted var(--primary-color);
+    outline-offset: 4px;
+}
+a:hover{
+    transition: .3s ease color,
+    .3s ease background-color,
+    .3s ease opacity;
+}
 body{
     display: flex;
-    font-display: column;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -55,11 +64,71 @@ img{
     margin-left: auto;
 }
 
+
+/* Header section */
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.site-header-logo {
+    margin-right: auto;
+}
+.site-header-logo:hover{
+    opacity: 0.8;
+}
+.site-header-logo:active{
+    opacity: 0.6;
+}
+.sitenav-logo {
+    width: 35px;
+    height: 42px;
+    display: block;
+}
+.sitenav {
+    margin-right: 40px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sitenav-item:not(:last-child) {
+    margin-right: 30px;
+}
+.sitenav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.sitenav-link.active{
+    border-bottom: 3px solid #333;
+}
+.sitenav-link:hover{
+    opacity: 0.8;
+    border-bottom: 3px solid #333;
+}
+.sitenav-link:active{
+    opacity: 0.6;
+}
+.sitenav-form-input {
+    color: #666;
+    border: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;   
+    font-size: 15px;
+    font-weight: 400;
+}
 .main-content{
     flex-grow: 1;
 }
-
-
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
