@@ -249,6 +249,21 @@ img{
                 36px 0 0 0 #ddd;
 }
 
+/* Promo section */
+.promo {
+
+}
+.promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.promo-img{
+    width: 400px;
+    height: 600px;
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
