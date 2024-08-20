@@ -251,9 +251,6 @@ img{
 }
 
 /* Promo section */
-.promo {
-
-}
 .promo-container {
     display: flex;
     align-items: center;
@@ -280,7 +277,7 @@ img{
 .runners-lead-cta{
     margin-left: auto;
 }
-.runners-lead-cta .lead-cta-heading, .lead-cta-text{
+.runners-lead-cta .lead-cta-heading{
     color: #fff;
 }
 .runners-lead-cta .lead-cta-text{
